@@ -8,9 +8,24 @@
 <body>
     <a href="index.html">Index</a>
     <h1>Formulaire</h1>
-    <form>
-        <label for="">Nom</label>
-        <input type="text">
+    <form method="POST">
+        <label for="inputNom">Nom</label>
+        <input type="text" id="inputNom">
+        <label for="inputPswd">password</label>
+        <input type="password" id="inputPswd" name="mdp">
+
+        <input type="radio" name="content" id="inputContentOui" value="Oui">
+        <label for="inputContentOui">Content</label>
+        <input type="radio" name="content" id="inputContentNon" value="Non">
+        <label for="inputContentNon">Pas content</label>
+
+        <select name="selectFonction" id="">
+            <option value="etudiant">Etudiant</option>
+            <option value="formateur">Formateur</option>
+            <option value="develeppeur">Developpeur</option>
+        </select>
+
+        <button type="submit">Submit</button>
     </form>
 </body>
 </html>
